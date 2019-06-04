@@ -13,6 +13,10 @@
     "reader"
   ],
   "author": "Simon Ordish <simon.ordish@masagi.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ordishs/script_reader.git"
+  },
   "license": "MIT",
   "dependencies": {
     "bn": "^1.0.3"
