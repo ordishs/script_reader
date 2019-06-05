@@ -133,19 +133,6 @@ ScriptReader.prototype.readVarintNum = function () {
   }
 }
 
-ScriptReader.prototype.readPushData = function () {
-  var first = this.readUInt8()
-  switch (first) {
-    case 0xFD:
-      return this.readUInt16LE()
-    case 0xFE:
-      return this.readUInt32LE()
-    case 0xFF:
-      return this.readUInt64LE()
-    default:
-      return first
-  }
-}
 /**
  * reads a length prepended buffer
  */
